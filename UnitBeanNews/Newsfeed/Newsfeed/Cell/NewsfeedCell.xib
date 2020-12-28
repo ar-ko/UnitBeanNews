@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PT Root UI_Medium.ttf">
+            <string>PTRootUI-Medium</string>
+        </array>
+        <array key="PT Root UI_Regular.ttf">
+            <string>PTRootUI-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsfeedCell" rowHeight="319" id="DFw-pG-AzQ" customClass="NewsfeedCell" customModule="UnitBeanNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DFw-pG-AzQ" id="xP8-DT-a97">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НАЗВАНИЕ НОВОСТИ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGi-h5-ydY">
+                        <rect key="frame" x="16" y="227" width="382" height="48.5"/>
+                        <fontDescription key="fontDescription" name="PTRootUI-Medium" family="PT Root UI" pointSize="20"/>
+                        <color key="textColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gix-IM-frU" customClass="WebImageView" customModule="UnitBeanNews" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="382" height="195"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="195" id="kro-5n-zeg"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cTr-jR-RXY">
+                        <rect key="frame" x="20" y="283.5" width="232" height="15.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автор новости" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ah-2F-Zme">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="15.5"/>
+                                <fontDescription key="fontDescription" name="PTRootUI-Regular" family="PT Root UI" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата публикации" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1f-FH-ki4">
+                                <rect key="frame" x="96" y="0.0" width="95" height="15.5"/>
+                                <fontDescription key="fontDescription" name="PTRootUI-Regular" family="PT Root UI" pointSize="12"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="a1n-mm-NPP">
+                                <rect key="frame" x="207" y="0.0" width="25" height="15.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-Zv-FSr">
+                                        <rect key="frame" x="0.0" y="0.0" width="12" height="15.5"/>
+                                        <color key="tintColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daz-6v-yXA">
+                                        <rect key="frame" x="18" y="0.0" width="7" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="PTRootUI-Regular" family="PT Root UI" pointSize="12"/>
+                                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gix-IM-frU" secondAttribute="trailing" constant="16" id="5Zo-6g-qhE"/>
+                    <constraint firstItem="cTr-jR-RXY" firstAttribute="top" secondItem="OGi-h5-ydY" secondAttribute="bottom" constant="8" id="W4a-Rc-031"/>
+                    <constraint firstItem="cTr-jR-RXY" firstAttribute="leading" secondItem="xP8-DT-a97" secondAttribute="leading" constant="20" symbolic="YES" id="bAG-XE-S1Q"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cTr-jR-RXY" secondAttribute="trailing" constant="16" id="eb7-Bk-qRE"/>
+                    <constraint firstAttribute="bottom" secondItem="cTr-jR-RXY" secondAttribute="bottom" constant="20" id="fau-9b-pGq"/>
+                    <constraint firstItem="OGi-h5-ydY" firstAttribute="leading" secondItem="xP8-DT-a97" secondAttribute="leading" constant="16" id="qIe-7t-1pk"/>
+                    <constraint firstItem="gix-IM-frU" firstAttribute="top" secondItem="xP8-DT-a97" secondAttribute="top" constant="16" id="rIA-7F-UJO"/>
+                    <constraint firstItem="OGi-h5-ydY" firstAttribute="top" secondItem="gix-IM-frU" secondAttribute="bottom" constant="16" id="tWv-jR-2EJ"/>
+                    <constraint firstItem="gix-IM-frU" firstAttribute="leading" secondItem="xP8-DT-a97" secondAttribute="leading" constant="16" id="uFE-UP-AP0"/>
+                    <constraint firstAttribute="trailing" secondItem="OGi-h5-ydY" secondAttribute="trailing" constant="16" id="xnT-4y-s1b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="author" destination="3Ah-2F-Zme" id="4nb-RJ-o0U"/>
+                <outlet property="imagePreview" destination="gix-IM-frU" id="VKV-8i-vhP"/>
+                <outlet property="imageViewHeightConstraint" destination="kro-5n-zeg" id="HoT-OU-Meb"/>
+                <outlet property="numberOfComments" destination="daz-6v-yXA" id="mJl-Vr-14f"/>
+                <outlet property="publishDate" destination="A1f-FH-ki4" id="HmG-LM-vSl"/>
+                <outlet property="title" destination="OGi-h5-ydY" id="IHx-Xu-wNz"/>
+            </connections>
+            <point key="canvasLocation" x="-243.19999999999999" y="273.01349325337333"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Shape" width="12" height="12"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
